@@ -6,7 +6,9 @@
   </head>
   <body>
     <header class="main-header">
-      <img class="header-logo" width="140px" height="70px" src="http://placehold.it/150x100" alt="BarberShop">
+      <a href="index.html">
+        <img class="header-logo" width="140" height="70" src="http://placehold.it/150x100" alt="BarberShop">
+      </a>
       <nav class="main-navigation">
         <ul>
           <li>
@@ -32,7 +34,7 @@
     </header>
     <main>
       <div class="breadcrumbs">
-        <h2>Средства для ухода</h2>
+        <h1>Средства для ухода</h1>
         <ul>
           <li>
             <a href="#">Главная</a>
@@ -50,108 +52,134 @@
           <dt>Производители</dt>
           <dd>
             <label>
-                  <input type="checkbox" name="producer" checked>BAXTER OF CALIFORNIA<br/>
-              </label>
+              <input type="checkbox" name="BaxterOfCalifornia" value="BaxterOfCalifornia" checked>BAXTER OF CALIFORNIA
+            </label>
             <label>
-                  <input type="checkbox" name="producer">MR NATTY<br/>
-              </label>
+              <input type="checkbox" name="MrNatty" value="MrNatty">MR NATTY
+            </label>
             <label>
-                  <input type="checkbox" name="producer" checked>SUAVECITO<br/>
-              </label>
+              <input type="checkbox" name="Suavecito" value="Suavecito" checked>SUAVECITO
+            </label>
             <label>
-                  <input type="checkbox" name="producer">MALIN+GOETZ<br/>
-              </label>
+              <input type="checkbox" name="Malin+Goetz" value="Malin+Goetz">MALIN+GOETZ
+            </label>
             <label>
-                  <input type="checkbox" name="producer">MURRAY'S<br/>
-              </label>
+              <input type="checkbox" name="Murray's" value="Murray's">MURRAY'S
+            </label>
             <label>
-                  <input type="checkbox" name="producer" checked>AMERICAN CREW<br/>
-              </label>
+                  <input type="checkbox" name="AmericanCrew" value="AmericanCrew" checked>AMERICAN CREW
+            </label>
           </dd>
           <dt>Группы товаров</dt>
           <dd>
             <label>
-                  <input type="radio" name="group-products">бритвенные принадлежности<br/>
-              </label>
+              <input type="radio" name="group-products" value="shaving">бритвенные принадлежности
+            </label>
             <label>
-                  <input type="radio" name="group-products" checked>средства для ухода<br/>
-              </label>
+              <input type="radio" name="group-products" value="care" checked>средства для ухода
+            </label>
             <label>
-                  <input type="radio" name="group-products">аксессуары<br/>
-              </label>
+              <input type="radio" name="group-products" value="accessories">аксессуары
+            </label>
           </dd>
         </dl>
         <button class="btn" type="submit">Показать</button>
       </form>
       <section class="catalog">
-        <section class="catalog-item">
-          <img width="220px" height="290px" src="http://placehold.it/220x290" alt="Фотография товара">
-          <p class="product-type">Набор для путешествий</p> // по факту тут хотела span - но не уверена
-          <b class="product-producer">"BAXTER OF CALIFORNIA"</b>
+        <article class="catalog-item">
+          <a href="#">
+            <img width="220" height="290" src="http://placehold.it/220x290" alt="Фотография товара">
+          </a>
+          <a href="#">
+            <p class="product-name">Набор для путешествий<br>«BAXTER OF CALIFORNIA»</p>
+          </a>
           <div class="content-item">
             <span class="price">2 900 РУБ.</span>
             <a class="btn" href="#">Купить</a>
           </div>
-        </section>
-        <section class="catalog-item">
-          <img width="220px" height="290px" src="http://placehold.it/220x290" alt="Фотография товара">
-          <p class="product-type">Увлажняющий кондиционер</p>
-          <b class="product-producer">"BAXTER OF CALIFORNIA"</b>
+        </article>
+        <article class="catalog-item">
+          <a href="#">
+            <img width="220" height="290" src="http://placehold.it/220x290" alt="Фотография товара">
+          </a>
+          <a href="#">
+            <p class="product-name">Увлажняющий кондиционер<br>«BAXTER OF CALIFORNIA»</p>
+          </a>
           <div class="content-item">
             <span class="price">750 РУБ.</span>
             <a class="btn" href="#">Купить</a>
           </div>
-        </section>
-        <section class="catalog-item">
-          <img width="220px" height="290px" src="http://placehold.it/220x290" alt="Фотография товара">
-          <p class="product-type">Гель для волос</p>
-          <b class="product-producer">"SUAVECITO"</b>
+        </article>
+        <article class="catalog-item">
+          <a href="#">
+            <img width="220" height="290" src="http://placehold.it/220x290" alt="Фотография товара">
+          </a>
+          <a href="#">
+            <p class="product-name">Гель для волос<br>«SUAVECITO»</p>
+          </a>
           <div class="content-item">
             <span class="price">290 РУБ.</span>
             <a class="btn" href="#">Купить</a>
           </div>
-        </section>
-        <section class="catalog-item">
-          <img width="220px" height="290px" src="http://placehold.it/220x290" alt="Фотография товара">
-          <p class="product-type">Глина для укладки волос</p>
-          <b class="product-producer">"AMERICAN CREW"</b>
+        </article>
+        <article class="catalog-item">
+          <a href="#">
+            <img width="220" height="290" src="http://placehold.it/220x290" alt="Фотография товара">
+          </a>
+          <a href="#">
+            <p class="product-name">Глина для укладки волос<br>«AMERICAN CREW»</p>
+          </a>
           <div class="content-item">
             <span class="price">500 РУБ.</span>
             <a class="btn" href="#">Купить</a>
           </div>
-        </section>
-        <section class="catalog-item">
-          <img width="220px" height="290px" src="http://placehold.it/220x290" alt="Фотография товара">
-          <p class="product-type">Гель для волос</p>
-          <b class="product-producer">"AMERICAN CREW"</b>
+        </article>
+        <article class="catalog-item">
+          <a href="#">
+            <img width="220" height="290" src="http://placehold.it/220x290" alt="Фотография товара">
+          </a>
+          <a href="#">
+            <p class="product-name">Гель для волос<br>«AMERICAN CREW»</p>
+          </a>
           <div class="content-item">
             <span class="price">300 РУБ.</span>
             <a class="btn" href="#">Купить</a>
           </div>
-        </section>
-        <section class="catalog-item">
-          <img width="220px" height="290px" src="http://placehold.it/220x290" alt="Фотография товара">
-          <p class="product-type">Набор для бритья</p>
-          <b class="product-producer">"BAXTER OF CALIFORNIA"</b>
+        </article>
+        <article class="catalog-item">
+          <a href="#">
+            <img width="220" height="290" src="http://placehold.it/220x290" alt="Фотография товара">
+          </a>
+          <a href="#">
+            <p class="product-name">Набор для бритья<br>«BAXTER OF CALIFORNIA»</p>
+          </a>
           <div class="content-item">
             <span class="price">3 900 РУБ.</span>
             <a class="btn" href="#">Купить</a>
           </div>
-        </section>
-        <div class="n-page">
-          <a class="btn btn-page" href="#">
-            <span class="btn-text">1</span>
-          </a>
-          <span class="btn btn-page-active">
-            <span class="btn-text">2</span>
-          </span>
-          <a class="btn btn-page" href="#">
-            <span class="btn-text">3</span>
-          </a>
-          <a class="btn btn-page" href="#">
-            <span class="btn-text">4</span>
-          </a>
-        </div>
+        </article>
+        <ul class="n-page">
+          <li>
+            <a class="btn btn-page" href="#">
+              <span class="btn-text">1</span>
+            </a>
+          </li>
+          <li>
+            <a class="btn btn-page-active">
+              <span class="btn-text">2</span>
+            </a>
+          </li>
+          <li>
+            <a class="btn btn-page" href="#">
+              <span class="btn-text">3</span>
+            </a>
+          </li>
+          <li>
+            <a class="btn btn-page" href="#">
+              <span class="btn-text">4</span>
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="main-footer">
